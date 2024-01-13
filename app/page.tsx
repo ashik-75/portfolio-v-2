@@ -93,7 +93,7 @@ const Page = () => {
 
         <div className="space-y-5 pb-20">
           <h1 className="text-2xl font-bold">Projects</h1>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             {projects.map((project) => (
               <a href={project.path} target="_blank" key={project.id}>
                 <div className="space-y-2 rounded-3xl border p-3">
@@ -108,8 +108,6 @@ const Page = () => {
                 </div>
               </a>
             ))}
-
-            <div>Proj - 2</div>
           </div>
         </div>
       </div>
