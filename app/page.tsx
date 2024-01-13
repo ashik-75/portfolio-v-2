@@ -1,6 +1,7 @@
 import React from "react";
 import BlurImage from "@/components/blur-image";
-import { projects } from "@/data/chat-data";
+import { projects } from "@/data/projects";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -91,17 +92,21 @@ const Page = () => {
           <h1 className="text-2xl font-bold">Projects</h1>
           <div className="grid grid-cols-3 gap-5">
             {projects.map((project) => (
-              <div
-                className="space-y-2 rounded-3xl border p-3"
-                key={project.id}
-              >
-                <BlurImage url={project.url} />
+              <a href={project.path} target="_blank">
+                <div
+                  className="space-y-2 rounded-3xl border p-3"
+                  key={project.id}
+                >
+                  <BlurImage url={project.url} />
 
-                <div className="px-2">
-                  <h1 className="text-lg font-bold">{project.title}</h1>
-                  <p className="line-clamp-2 text-sm">{project.description}</p>
+                  <div className="px-2">
+                    <h1 className="text-lg font-bold">{project.title}</h1>
+                    <p className="line-clamp-2 text-sm">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
 
             <div>Proj - 2</div>
