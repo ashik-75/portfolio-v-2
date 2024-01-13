@@ -81,7 +81,10 @@ const Page = () => {
               "React-Query",
               "Zustand/Redux",
             ].map((tech) => (
-              <span key={tech} className="rounded border px-4 py-1 text-sm">
+              <span
+                key={Date.now()}
+                className="rounded border px-4 py-1 text-sm"
+              >
                 {tech}
               </span>
             ))}
@@ -92,11 +95,8 @@ const Page = () => {
           <h1 className="text-2xl font-bold">Projects</h1>
           <div className="grid grid-cols-3 gap-5">
             {projects.map((project) => (
-              <a href={project.path} target="_blank">
-                <div
-                  className="space-y-2 rounded-3xl border p-3"
-                  key={project.id}
-                >
+              <a href={project.path} target="_blank" key={project.id}>
+                <div className="space-y-2 rounded-3xl border p-3">
                   <BlurImage url={project.url} />
 
                   <div className="px-2">
