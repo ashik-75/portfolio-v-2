@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 import { Inter } from "next/font/google";
+// import Head from "next/head";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ["latin"] });
@@ -17,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/suitcase.png" />
+      </head>
+
       <body className={inter.className}>{children}</body>
     </html>
   );
