@@ -1,7 +1,7 @@
 import React from "react";
 import BlurImage from "@/components/blur-image";
 import { projects } from "@/data/projects";
-
+import { Phone, Mail, Home } from "lucide-react";
 const Page = () => {
   return (
     <div className="min-h-full bg-purple-50/50">
@@ -14,6 +14,22 @@ const Page = () => {
               Frontend Engineer focused on building products with extra
               attention to detail.
             </p>
+
+            <div className="space-y-2">
+              <div className="flex items-center gap-3">
+                <Phone className="text-zinc-500" size={16} />
+
+                <span>+8801786066566</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="text-zinc-500" size={16} />
+                <span>ashikex49@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Home className="text-zinc-500" size={16} />
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
           </div>
         </div>
 
