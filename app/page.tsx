@@ -9,7 +9,7 @@ const Page = () => {
         <div>
           <div className="space-y-2">
             <h1 className="text-3xl font-black">Sweet Rana</h1>
-            <p>Frontend Software Developer</p>
+            <p>Frontend Software Engineer</p>
             <p className="max-w-xl">
               Frontend Engineer focused on building products with extra
               attention to detail.
@@ -36,11 +36,12 @@ const Page = () => {
         <div>
           <h1 className="text-2xl font-bold">About</h1>
           <p className="max-w-xl">
-            As a Frontend Engineer, I have successfully taken multiple products
-            from 0 to 1 and love working with functional and data-driven
-            applications. I primarily work with TypeScript, React, Redux, and
-            Tailwind. I have two years of experience working locally and
-            remotely with companies worldwide.
+            As a Frontend Engineer, I have successfully launched several
+            products, guiding them from conception to implementation. I excel in
+            developing functional and data-driven applications, leveraging my
+            expertise in TypeScript, React, Redux, and Tailwind. With two years
+            of experience, I have seamlessly collaborated with companies locally
+            and remotely.
           </p>
         </div>
 
