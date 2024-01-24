@@ -18,7 +18,7 @@ export const projects = [
   {
     id: 3,
     url: "/image/clay.png",
-    title: "Modern Landing Page",
+    title: "Modern business anding Page",
     path: "https://clay-react.vercel.app/",
     description:
       "An amazing landing page for your business to enhance your site's landing experience",
@@ -35,7 +35,7 @@ export const projects = [
     id: 5,
     url: "/image/intercom.png",
     path: "https://intercom-coral.vercel.app/",
-    title: "Daashboard for music app",
+    title: "Daashboard for music app build with shadcn",
     description: "Interactive dashboard for music application",
   },
   {
