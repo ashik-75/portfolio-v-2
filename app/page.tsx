@@ -49,7 +49,7 @@ const Page = () => {
           <h1 className="text-2xl font-bold">Experience</h1>
           <div className="space-y-5">
             <div className="max-w-xl">
-              <div className="text-sm">2022 - 2023</div>
+              <div className="text-sm">April 1, 2022 - Dec 31, 2023</div>
 
               <div>
                 <h1 className="font-bold">
@@ -67,7 +67,7 @@ const Page = () => {
             </div>
 
             <div className="max-w-xl">
-              <div className="text-sm">2021 - 2022</div>
+              <div className="text-sm">March 1, 2022 - Feb 28, 2023</div>
 
               <div>
                 <h1 className="font-bold">Frontend Software Developer</h1>
