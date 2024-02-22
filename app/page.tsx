@@ -1,7 +1,8 @@
 import React from "react";
 import BlurImage from "@/components/blur-image";
 import { projects } from "@/data/projects";
-import { Phone, Mail, Home } from "lucide-react";
+import { Phone, Mail, Home, Github } from "lucide-react";
+import Image from "next/image";
 const Page = () => {
   return (
     <div className="min-h-full bg-purple-50/50">
@@ -13,19 +14,38 @@ const Page = () => {
 
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <Phone className="text-zinc-500" size={16} />
-
-                <span>+8801786066566</span>
+                <Home className="text-zinc-500" size={16} />
+                <span>Dhaka, Bangladesh</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-zinc-500" size={16} />
                 <span>ashikex49@gmail.com</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Home className="text-zinc-500" size={16} />
-                <span>Dhaka, Bangladesh</span>
-              </div>
             </div>
+            <div className="flex items-center gap-3">
+              <Phone className="text-zinc-500" size={16} />
+
+              <span>+8801786066566</span>
+            </div>
+
+            <a
+              target="_blank"
+              className="inline-block"
+              href="https://github.com/ashik-75"
+            >
+              <div className="flex items-center gap-3">
+                <Image
+                  width={20}
+                  height={20}
+                  src={"/github.png"}
+                  alt="github profile"
+                />
+
+                <span className="duration-100 hover:underline hover:underline-offset-1">
+                  Github
+                </span>
+              </div>
+            </a>
           </div>
         </div>
 
